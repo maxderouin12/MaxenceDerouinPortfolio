@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FSAE Intake Manifold | Maxence Derouin</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/intake.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">MAXENCE DEROUIN</a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html">Experience</a>
+            <a href="education.html">Education</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+ <!-- =========================
+         Hero
+    ========================= -->
+
+    <section class="intake-hero">
+
+        <div class="intake-hero-content">
+
+            <p>FORMULA UOTTAWA IC</p>
+
+            <h1>
+                Intake Manifold Design
+            </h1>
+
+            <p>
+                Designing, simulating and validating an intake manifold
+                for a Suzuki GSX-R600 engine to improve volumetric efficiency,
+                airflow distribution and overall engine performance.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Objective
+    ========================= -->
+
+    <section class="intake-overview">
+
+        <div class="intake-overview-content">
+
+            <p class="section-label">
+                OBJECTIVE
+            </p>
+
+            <h2>
+                Optimizing Engine Airflow
+            </h2>
+
+            <p>
+                The objective of this project was to design and optimize an
+                intake manifold for a Suzuki GSX-R600 engine targeting improved volumetric efficiency, airflow distribution and overall engine
+                performance.
+            </p>
+
+            <p>
+                With the FSAE rulebook mandating an intake restrictor of 20mm and the vehicle imposing strict packaging constraints, the intake manifold had to be designed within the tire suface envelope.
+            </p>
+
+            <p>
+                Analytical modelling, simulation and physical testing were used throughout the development process to determine runner sizing, plenum geometry and flow behaviour while evaluating their influence on engine performance.
+            </p>
+
+        </div>
+
+        <img src="Images\Intake.png">
+
+    </section>
+
+
+    <!-- =========================
+         Design
+    ========================= -->
+
+    <section class="intake-section">
+
+        <div class="intake-text">
+
+            <h2>
+                Intake Manifold Design
+            </h2>
+
+            <ul>
+
+                <li>
+                    Developed a <strong>square intake manifold configuration</strong> to
+                    promote even airflow distribution between cylinders and support volumetric efficiency targets.
+                </li>
+
+                <li>
+                    Tuned runner length for <strong>10,000 RPM</strong> using Helmholtz resonance wave theory.
+                </li>
+
+                <li>
+                    Sized the plenum <strong>(1800cc)</strong> to support improved throttle response while accounting for the intake restrictor and packaging constraints.
+                </li>
+
+                <li>
+                    Designed the runner inlets with a <strong>elliptical bell-mouth</strong> geometry to improve airflow into the intake runners.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+<div class="intake-image collage">
+
+    <img src="intake\intakeCAD.jpg"
+         alt="Intake manifold CAD model">
+
+    <img src="intake\cutCAD_annotations.jpg"
+         alt="Intake manifold CAD design">
+
+</div>
+
+    </section>
+
+
+    <!-- =========================
+         Analysis
+    ========================= -->
+
+    <section class="intake-section reverse">
+
+<div class="intake-image collage-three">
+
+    <img src="intake/intakeHIGHP.jpg"
+         alt="CFD pressure analysis of Formula uOttawa intake manifold">
+
+    <img src="intake/intakeLOWP.jpg"
+         alt="CFD pressure analysis of Formula uOttawa intake manifold">
+
+    <img src="intake/Realis.jpg"
+         alt="Volumetric efficiency map">
+
+</div>
+
+        <div class="intake-text">
+
+            <p class="section-label">
+                ENGINEERING ANALYSIS
+            </p>
+
+            <h2>
+                Simulation & Design Iteration
+            </h2>
+
+            <ul>
+
+                <li>
+                    Performed <strong>steady-state CFD</strong> in <strong>Ansys Fluent</strong> to analyse flow separation and pressure recovery through the diffuser.
+                </li>
+
+                <li>
+                    Performed <strong>transient CFD</strong> under maximum volumetric efficiency conditions to evaluate airflow distribution between the
+                    intake runners.
+                </li>
+
+                <li>
+                    Compared <strong>pressure averages </strong>at the runner outlets to assess the distribution of airflow between cylinders.
+                </li>
+
+                <li>
+                    Used <strong>Realis WAVE</strong> to iterate intake
+                    geometry and compare volumetric efficiency and torque
+                    across the engine operating range.
+                </li>
+
+                <li>
+                    Used simulation results to guide successive <strong>design</strong>
+                    iterations and refine the intake geometry.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Testing & Validation
+    ========================= -->
+
+    <section class="intake-section">
+
+        <div class="intake-text">
+
+            <p class="section-label">
+                TESTING & VALIDATION
+            </p>
+
+            <h2>
+                Validating the Intake Design
+            </h2>
+
+            <ul>
+
+                <li>
+                    Extracted exhaust gas temperature data from each exhaust
+                    runner to evaluate cylinder-to-cylinder airflow distribution.
+                </li>
+
+                <li>
+                    Measured approximately <strong>4% discrepancy</strong>
+                    between the outer and middle cylinders, indicating improved
+                    airflow distribution across the engine.
+                </li>
+
+                <li>
+                    Evaluated the volumetric efficiency tuning curve, which
+                    showed a significant increase around the target
+                    <strong>10,000 RPM</strong> operating point.
+                </li>
+
+                <li>
+                    Observed the largest effect in the volumetric efficiency
+                    curve at full throttle.
+                </li>
+
+                <li>
+                    Developed testing methods to compare physical engine data
+                    with analytical and simulation results.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="intake-image-stack">
+
+            <img src="intake\VEmap.jpg"
+                 alt="Formula uOttawa intake manifold" style="height:300px; margin-bottom:20px;">
+
+            <img src="intake\EGT-data.png"
+                 alt="Formula SAE engine dyno testing">
+
+            <img src="intake\EGT-error.png"
+                 alt="Formula uOttawa intake manifold">
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Results
+    ========================= -->
+
+    <section class="intake-results">
+
+        <p class="section-label">
+            ACHIEVEMENTS
+        </p>
+
+        <h2>
+            Results & Lessons Learned
+        </h2>
+
+
+        <div class="results-grid">
+
+            <div class="result-box">
+
+                <h3>
+                    Complete Design Process
+                </h3>
+
+                <p>
+                    Applied the full engineering design process from requirements definition and design through analysis,
+                    manufacturing and physical validation for prototype development.
+                </p>
+
+            </div>
+
+
+            <div class="result-box">
+
+                <h3>
+                    Intake System Behaviour
+                </h3>
+
+                <p>
+                    Demonstrated the influence of intake system geometry on volumetric efficiency, airflow distribution and throttle response.
+                </p>
+
+            </div>
+
+
+            <div class="result-box">
+
+                <h3>
+                    Testing & Validation
+                </h3>
+
+                <p>
+                    Developed testing methods to compare analytical and
+                    simulation results with physical engine data and validate
+                    the final intake design.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Skills
+    ========================= -->
+
+    <section class="intake-skills">
+
+        <p class="section-label">
+            SKILLS
+        </p>
+
+        <h2>
+            Technical Skills
+        </h2>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-category">
+
+                <h3>
+                    Software
+                </h3>
+
+                <p>
+                    SolidWorks<br>
+                    Ansys Fluent<br>
+                    Realis WAVE
+                </p>
+
+            </div>
+
+
+            <div class="skill-category">
+
+                <h3>
+                    Engineering
+                </h3>
+
+                <p>
+                    Design Process<br>
+                    Fluid Mechanics<br>
+                    Simulation Analysis<br>
+                    Engine Airflow Analysis
+                </p>
+
+            </div>
+
+
+            <div class="skill-category">
+
+                <h3>
+                    Manufacturing & Validation
+                </h3>
+
+                <p>
+                    Additive Manufacturing<br>
+                    Packaging<br>
+                    Testing & Validation
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<footer>
+
+    <div>
+        <h3>MAXENCE DEROUIN</h3>
+        <p>Mechanical Engineering Portfolio</p>
+    </div>
+
+    <div class="footer-links">
+        <a href="projects.html">← Back to Projects</a>
+    </div>
+
+</footer>
+
+</body>
+</html>

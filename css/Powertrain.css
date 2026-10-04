@@ -1,0 +1,366 @@
+/* =========================
+   Powertrain Hero
+========================= */
+
+.powertrain-hero {
+    width: 100%;
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(20, 43, 64, 0.55),
+            rgba(20, 43, 64, 0.92)
+        ),
+        url("Exp-img/FSAE/fsae_car.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.powertrain-hero-content {
+    width: 1100px;
+    margin: auto;
+    padding: 80px 40px;
+    color: white;
+}
+
+.powertrain-hero-content p:first-child {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #cfcfcf;
+}
+
+.powertrain-hero-content h1 {
+    font-size: 60px;
+    margin: 0 0 10px;
+}
+
+.powertrain-hero-content h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0 0 25px;
+}
+
+.powertrain-hero-content p:last-child {
+    max-width: 650px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cfcfcf;
+}
+
+
+/* =========================
+   Overview
+========================= */
+
+.powertrain-overview {
+    background-color: #ffffff;
+    padding: 75px 30px 0 75px;
+    display: flex;
+    width: 1300px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 75px;
+}
+
+.powertrain-overview-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.powertrain-overview h2 {
+    font-size: 38px;
+    color: #142B40;
+    margin-bottom: 25px;
+}
+
+.powertrain-overview p {
+    max-width: 950px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #444444;
+    margin-bottom: 20px;
+}
+
+.powertrain-overview img {
+    height: 400px;
+    width: auto;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   Main Sections
+========================= */
+
+.powertrain-section {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    padding: 80px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    align-items: center;
+}
+
+.powertrain-section.reverse {
+    background-color: #f5f7f9;
+    max-width: none;
+    padding-left: calc((100% - 1100px) / 2);
+    padding-right: calc((100% - 1100px) / 2);
+}
+
+.powertrain-text {
+    min-width: 0;
+}
+
+.section-label {
+    color: #188ce6;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.powertrain-text h2 {
+    font-size: 34px;
+    color: #142B40;
+    margin: 0 0 25px;
+}
+
+.powertrain-text ul {
+    padding-left: 22px;
+}
+
+.powertrain-text li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444444;
+    margin-bottom: 15px;
+}
+
+.powertrain-image img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    margin-top: 120px;
+}
+
+
+/* =========================
+   Results
+========================= */
+
+.powertrain-results {
+    background-color: #ffffff;
+
+    padding: 100px 30px;
+}
+
+.powertrain-results > .section-label,
+.powertrain-results > h2 {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.powertrain-results h2 {
+    font-size: 38px;
+    color: #142B40;
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+.results-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.result-box {
+    border-top: 3px solid #188ce6;
+    padding: 25px 10px;
+}
+
+.result-box h3 {
+    font-size: 26px;
+    color: #142B40;
+    margin: 0 0 15px;
+}
+
+.result-box p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555555;
+}
+
+
+.powertrain-image-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.powertrain-image-stack img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+/* =========================
+   Skills
+========================= */
+
+.powertrain-skills {
+    background-color: #EAF0F6;
+    padding: 100px 30px;
+}
+
+.powertrain-skills > .section-label,
+.powertrain-skills > h2 {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.powertrain-skills h2 {
+    font-size: 38px;
+    color: #142B40;
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+.skills-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.skill-category {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid #d6dde4;
+}
+
+.skill-category h3 {
+    font-size: 21px;
+    color: #142B40;
+    margin: 0 0 15px;
+}
+
+.skill-category p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 1000px) {
+
+    .powertrain-hero-content {
+        width: 100%;
+        padding: 70px 50px;
+    }
+
+    .powertrain-hero-content h1 {
+        font-size: 48px;
+    }
+
+    .powertrain-section {
+        padding: 70px 50px;
+        gap: 40px;
+    }
+
+    .powertrain-section.reverse {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .results-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .powertrain-hero {
+        min-height: 450px;
+    }
+
+    .powertrain-hero-content {
+        padding: 60px 25px;
+    }
+
+    .powertrain-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .powertrain-hero-content h2 {
+        font-size: 22px;
+    }
+
+    .powertrain-overview {
+        padding: 65px 25px;
+    }
+
+    .powertrain-overview h2 {
+        font-size: 30px;
+    }
+
+    .powertrain-section {
+        grid-template-columns: 1fr;
+        padding: 60px 25px;
+        gap: 35px;
+    }
+
+    .powertrain-section.reverse {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .powertrain-text h2 {
+        font-size: 29px;
+    }
+
+    .powertrain-results,
+    .powertrain-skills {
+        padding: 65px 25px;
+    }
+
+    .powertrain-results h2,
+    .powertrain-skills h2 {
+        font-size: 30px;
+    }
+
+    .results-grid,
+    .skills-grid {
+        gap: 20px;
+    }
+}

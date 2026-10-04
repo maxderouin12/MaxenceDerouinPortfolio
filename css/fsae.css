@@ -1,0 +1,462 @@
+
+/* =========================
+   FORMULA uOTTAWA
+========================= */
+
+.fuo-hero {
+    height: clamp(450px, 40vw, 600px);
+    position: relative;
+    overflow: hidden;
+}
+
+.fuo-hero-image {
+    position: absolute;
+    top: -90px;
+    right: 0;
+    width: 100%;
+    height: calc(100% + 50px);
+    object-fit: cover;
+
+    /* Fade the image */
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 75%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        black 85%,
+        transparent 100%
+    );
+}
+
+.fuo-hero-text {
+    position: absolute;
+    bottom: clamp(40px, 4vw, 60px);
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.fuo-hero-text h1 {
+    font-size: clamp(40px, 3.5vw, 52px);
+    color: #ffffff;
+}
+
+.fuo-hero-text h2 {
+    font-size: clamp(20px, 1.6vw, 24px);
+    font-weight: normal;
+    margin-top: 5px;
+    color: #5f5f5f;
+}
+
+/* =========================
+   FuO Overview
+========================= */
+
+.fuo {
+    width: min(100% - 50px, 1400px);
+    margin: 0 auto;
+}
+
+.fuo-Overview {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(30px, 5vw, 75px);
+}
+
+.fuo-Overview img {
+    width: clamp(150px, 15%, 250px);
+    height: 100px;
+    object-fit: contain;
+    margin: 12px 0 50px 0;
+    border: 1pt solid #ff0000;
+    border-radius: 8px;
+}
+
+.fuo-Overview h1 {
+    font-size: clamp(28px, 3vw, 36pt);
+    color: #000000;
+    margin: 0;
+}
+
+hr.fuo-Overview {
+    border: none;
+    border-top: 1pt solid #000000;
+    margin: 0 0 20px 0;
+}
+
+
+/* =========================
+   FuO Role
+========================= */
+
+.fuo-Role {
+    margin: 0;
+}
+
+.fuo-Role h1 {
+    font-size: clamp(22px, 2vw, 24pt);
+    color: #000000;
+    margin: 0;
+}
+
+.fuo-Role h2 {
+    font-size: 12pt;
+    color: #ff0000;
+    margin: 0 0 20px 0;
+}
+
+.fuo-Role p {
+    font-size: 12pt;
+    color: #535353;
+    margin: 0;
+}
+
+
+/* =========================
+   FuO Main
+========================= */
+
+.fuo-main {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(30px, 5vw, 75px);
+}
+
+.fuo-main2 {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(30px, 5vw, 75px);
+}
+
+
+/* =========================
+   FuO Main Images
+========================= */
+
+.fuo-main img {
+    width: clamp(300px, 35%, 400px);
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    margin: 25px 0 50px 0;
+    border-radius: 10px;
+    border: 3px solid #cecece;
+    box-sizing: border-box;
+}
+
+.fuo-main2 img {
+    width: clamp(300px, 45%, 400px);
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    margin: 25px 0 50px 0;
+    border-radius: 10px;
+    border: 3px solid #cecece;
+    box-sizing: border-box;
+}
+
+/* =========================
+   FUO MAIN 2
+========================= */
+
+.fuo-main2 {
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(30px, 5vw, 75px);
+    margin-top: 75px;
+}
+
+/* 2x2 image grid */
+.fuo-image-grid {
+    width: clamp(250px, 50%, 450px);
+    aspect-ratio: 1 / 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.fuo-image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Text on the right */
+.fuo-main2-text {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* =========================
+   FuO Content
+========================= */
+
+.fuo-Content {
+    margin: 0;
+    flex: 1;
+    min-width: 0;
+}
+
+.fuo-Content h1 {
+    font-size: clamp(20px, 1.7vw, 20pt);
+    color: #ff0000;
+    margin: 0 0 20px 0;
+}
+
+.fuo-Content p {
+    font-size: 12pt;
+    color: #000000;
+    text-align: justify;
+    margin: 0 0 20px 0;
+}
+
+
+/* =========================
+   Horizontal Rules
+========================= */
+
+hr.fuo-main {
+    border: none;
+    border-top: 1pt solid #0057A8;
+    margin: 50px 0 0px 0;
+}
+
+hr.fuo-Content {
+    border: none;
+    border-top: 1pt solid #dadada;
+    margin: 15px 0 20px 0;
+}
+
+
+/* =========================
+   FuO Skills
+========================= */
+
+.fuo-skills {
+    margin: 0;
+    display: flex;
+}
+
+.fuo-container {
+    width: 100%;
+    margin: 0 0 20px 0;
+    display: flex;
+    gap: clamp(15px, 2vw, 25px);
+}
+
+
+/* =========================
+   FuO Skill Boxes
+========================= */
+
+.fuo-box1 {
+    background-color: white;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s ease;
+
+    flex: 600 1 0;
+    min-width: 0;
+}
+
+.fuo-box2 {
+    background-color: white;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s ease;
+
+    flex: 275 1 0;
+    min-width: 0;
+}
+
+
+/* =========================
+   Skill Box Headings
+========================= */
+
+.fuo-box1 h1,
+.fuo-box2 h1 {
+    color: #000000;
+    font-size: 14pt;
+    margin: 10px;
+}
+
+
+/* =========================
+   Skill Box Paragraphs
+========================= */
+
+.fuo-box1 p,
+.fuo-box2 p {
+    font-size: 12pt;
+    margin: 10px 10px 20px 10px;
+}
+
+
+/* =========================
+   Lists
+========================= */
+
+.fuo-container ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.fuo-container li {
+    display: list-item;
+    margin-bottom: 6px;
+}
+
+
+/* =========================
+   Tablet / Smaller Desktop
+========================= */
+
+@media (max-width: 1000px) {
+
+    .fuo {
+        width: calc(100% - 50px);
+    }
+
+    .fuo-Overview {
+        gap: 30px;
+    }
+
+    .fuo-main,
+    .fuo-main2 {
+        gap: 30px;
+    }
+
+    .fuo-main img,
+    .fuo-main2 img {
+        width: 40%;
+    }
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 700px) {
+
+    .fuo-hero {
+        height: 450px;
+    }
+
+    .fuo-hero-text {
+        bottom: 40px;
+        padding: 0 20px;
+    }
+
+    .fuo-hero-text h1 {
+        font-size: 40px;
+    }
+
+    .fuo-hero-text h2 {
+        font-size: 20px;
+    }
+
+
+    /* =========================
+       Overview
+    ========================= */
+
+    .fuo {
+        width: 100%;
+        margin: 0;
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+
+    .fuo-Overview {
+        padding: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .fuo-Overview img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .fuo-Overview h1 {
+        font-size: 32px;
+    }
+
+
+    /* =========================
+       Role
+    ========================= */
+
+    .fuo-Role {
+        padding: 0;
+    }
+
+    .fuo-Role h1 {
+        font-size: 26px;
+    }
+
+
+    /* =========================
+       Main
+    ========================= */
+
+    .fuo-main,
+    .fuo-main2 {
+        padding: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .fuo-main img,
+    .fuo-main2 img {
+        width: 100%;
+        height: auto;
+        margin: 25px 0;
+    }
+
+    hr.fuo-main {
+        margin: 50px 0 10px 0;
+    }
+
+
+    /* =========================
+       Skills
+    ========================= */
+
+    .fuo-skills {
+        padding: 0;
+    }
+
+    .fuo-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .fuo-box1,
+    .fuo-box2 {
+        width: 100%;
+        flex: none;
+    }
+}

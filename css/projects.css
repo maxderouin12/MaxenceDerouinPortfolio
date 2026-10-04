@@ -1,0 +1,366 @@
+ /* =========================
+   Projects
+========================= */
+
+.section-projects {
+    width: 100%;
+    margin: auto;
+    padding: clamp(60px, 5vw, 100px) clamp(30px, 5vw, 100px) 0;
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   Page Heading
+========================= */
+
+.section-projects h2 {
+    font-size: clamp(30px, 2.5vw, 48px);
+    margin: 0 0 0 clamp(20px, 2.5vw, 50px);
+}
+
+.section-projects > p {
+    font-size: clamp(15px, 1vw, 20px);
+    margin: 0 0 25px clamp(20px, 2.5vw, 50px);
+    color: #000000;
+}
+
+.section-projects h3 {
+    font-size: clamp(21px, 1.7vw, 32px);
+    margin: clamp(30px, 3vw, 50px) 0 20px clamp(30px, 4vw, 80px);
+}
+
+
+/* =========================
+   Section Divider
+========================= */
+
+hr.projects {
+    border: none;
+    border-top: 2px solid #188ce6;
+    margin: 0 clamp(30px, 4vw, 80px) 0 clamp(20px, 2vw, 40px);
+}
+
+
+/* =========================
+   Project Grid
+========================= */
+
+.projects-container {
+    width: min(100%, 1500px);
+    margin: 0 auto 60px;
+    padding: 0 clamp(20px, 4vw, 60px);
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(20px, 3vw, 50px);
+}
+
+.project-box {
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #ffffff 65%,
+        #aaaaaa
+    );
+
+    border: 2px solid #720000;
+    border-radius: 8px;
+    overflow: hidden;
+
+    height: clamp(600px, 42vw, 800px);
+
+    position: relative;
+    transition: transform 0.2s ease;
+
+    min-width: 0;
+}
+
+.project-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* =========================
+   Project Content
+========================= */
+
+.project-content {
+    margin: 0;
+    min-width: 0;
+}
+
+.project-content p {
+    margin: 0 10px;
+    color: #18416d;
+    font-size: clamp(14px, 1vw, 18px);
+    letter-spacing: 1px;
+}
+
+.project-content h3 {
+    font-size: clamp(18px, 1.4vw, 26px);
+    margin: 0 10px 15px;
+    color: #000000;
+}
+
+.project-content h4 {
+    font-size: clamp(13px, 0.95vw, 18px);
+    margin: 0 10px 20px;
+    color: #003ec4;
+    font-weight: normal;
+}
+
+.project-content h5 {
+    bottom: 10px;
+    right: 20px;
+    color: #030b3d;
+    position: absolute;
+    font-weight: normal;
+    font-size: clamp(13px, 0.95vw, 18px);
+}
+
+.br_local {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   Project Link
+========================= */
+
+.project-content a {
+    text-decoration: none;
+}
+
+.project-content a:hover {
+    color: #142B40;
+}
+
+.project-box:hover {
+    transform: scale(1.01);
+}
+
+
+/* =========================
+   Additional Projects
+========================= */
+
+.additional-projects {
+    width: min(100%, 1500px);
+    margin: auto;
+    padding: 0 clamp(30px, 7vw, 150px) clamp(60px, 6vw, 100px);
+}
+
+.additional-projects h3 {
+    font-size: clamp(21px, 1.7vw, 32px);
+    margin: clamp(30px, 3vw, 50px) 0 20px;
+}
+
+.additional-content {
+    text-align: center;
+    margin: clamp(30px, 3vw, 50px) auto 0;
+}
+
+.additional-content p {
+    font-size: clamp(15px, 1.1vw, 20px);
+    color: #5c5c5c;
+    margin-bottom: 25px;
+}
+
+.portfolio-button {
+    display: inline-block;
+    padding: clamp(10px, 0.8vw, 12px) clamp(18px, 1.5vw, 24px);
+    background-color: #188ce6;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: clamp(14px, 1vw, 18px);
+    transition: 0.2s ease;
+}
+
+.portfolio-button:hover {
+    background-color: #142B40;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    /* =====================
+       Header
+    ===================== */
+
+    header {
+        padding: 15px 20px;
+    }
+
+    header nav a:not(.contact-button) {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header nav .contact-button {
+        display: block;
+        margin-left: auto;
+    }
+
+
+    /* =====================
+       Main Section
+    ===================== */
+
+    .section-projects {
+        padding: 45px 12px 0;
+    }
+
+
+    /* =====================
+       Page Heading
+    ===================== */
+
+    .section-projects h2 {
+        font-size: 30px;
+        margin: 0 0 12px 8px;
+    }
+
+    .section-projects > p {
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0 8px 20px;
+    }
+
+    .section-projects h3 {
+        font-size: 21px;
+        margin: 30px 0 12px 8px;
+    }
+
+
+    /* =====================
+       Section Divider
+    ===================== */
+
+    hr.projects {
+        margin: 0 8px;
+    }
+
+
+    /* =====================
+       Project Grid
+    ===================== */
+
+    .projects-container {
+        width: 100%;
+        margin: 0 0 40px;
+        padding: 0 8px;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+
+    /* =====================
+       Project Card
+    ===================== */
+
+    .project-box {
+        height: auto;
+        min-height: 0;
+        padding-bottom: 45px;
+        border-width: 1px;
+    }
+
+    .project-box img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+    /* =====================
+       Project Content
+    ===================== */
+
+    .project-content p {
+        font-size: 10px;
+        margin: 9px 9px 3px;
+        letter-spacing: 0.7px;
+    }
+
+    .project-content h3 {
+        font-size: 15px;
+        line-height: 1.2;
+        margin: 0 9px 8px;
+    }
+
+    .project-content h4 {
+        font-size: 10px;
+        line-height: 1.4;
+        margin: 0 9px 10px;
+    }
+
+    .project-content ul {
+        padding-left: 16px;
+        margin-top: 0;
+    }
+
+    .project-content li {
+        margin-bottom: 7px;
+    }
+
+    .br_local {
+        margin-bottom: 3px;
+    }
+
+
+    /* =====================
+       Project Link
+    ===================== */
+
+    .project-content h5 {
+        bottom: 10px;
+        right: 10px;
+        font-size: 11px;
+    }
+
+
+    /* =====================
+       Additional Projects
+    ===================== */
+
+    .additional-projects {
+        width: 100%;
+        padding: 0 12px 50px;
+    }
+
+    .additional-projects h3 {
+        font-size: 21px;
+        margin: 30px 0 12px 8px;
+    }
+
+    .additional-content {
+        margin: 25px 8px 0;
+    }
+
+    .additional-content p {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-button {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+}

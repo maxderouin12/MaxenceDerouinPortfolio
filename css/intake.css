@@ -1,0 +1,406 @@
+/* =========================
+   Intake Hero
+========================= */
+
+.intake-hero {
+    width: 100%;
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(20, 43, 64, 0.55),
+            rgba(20, 43, 64, 0.92)
+        ),
+        url("Exp-img/FSAE/intake_manifold.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.intake-hero-content {
+    width: min(100%, 1100px);
+    margin: auto;
+    padding: 80px 40px;
+    color: white;
+}
+
+.intake-hero-content p:first-child {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #cfcfcf;
+}
+
+.intake-hero-content h1 {
+    font-size: 60px;
+    margin: 0 0 10px;
+}
+
+.intake-hero-content h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0 0 25px;
+}
+
+.intake-hero-content p:last-child {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cfcfcf;
+}
+
+
+/* =========================
+   Overview
+========================= */
+
+.intake-overview {
+    width: min(100%, 1200px);
+    margin: auto;
+    padding: 75px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(40px, 5vw, 75px);
+
+    background-color: #ffffff;
+}
+
+.intake-overview-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.intake-overview h2 {
+    font-size: 38px;
+    color: #142B40;
+    margin-bottom: 25px;
+}
+
+.intake-overview p {
+    max-width: 950px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #444444;
+    margin-bottom: 20px;
+}
+
+.intake-overview img {
+    width: 38%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   Main Sections
+========================= */
+
+.intake-section {
+    width: min(100%, 1100px);
+    margin: 0 auto;
+
+    padding: 80px 30px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(30px, 4vw, 60px);
+
+    align-items: center;
+}
+
+.intake-section.reverse {
+    width: 100%;
+    max-width: none;
+
+    background-color: #f5f7f9;
+
+    padding: 80px max(30px, calc((100% - 1100px) / 2));
+}
+
+.intake-text {
+    min-width: 0;
+}
+
+.section-label {
+    color: #188ce6;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.intake-text h2 {
+    font-size: 34px;
+    color: #142B40;
+    margin: 0 0 25px;
+}
+
+.intake-text ul {
+    padding-left: 22px;
+}
+
+.intake-text li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444444;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   Images
+========================= */
+
+.intake-image img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+.intake-image-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.intake-image-stack img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+.collage {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.collage img {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+.collage-three {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 6px;
+    row-gap: 10px;
+    width: 100%;
+}
+
+.collage-three img {
+    width: 100%;
+    max-height: 300px;
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.collage-three img:nth-child(3) {
+    grid-column: 1 / 3;
+    width: 100%;
+}
+
+
+/* =========================
+   Results
+========================= */
+
+.intake-results {
+    background-color: #f5f7f9;
+    padding: 75px 30px;
+}
+
+.intake-results > .section-label,
+.intake-results > h2 {
+    width: min(100%, 1100px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intake-results h2 {
+    font-size: 38px;
+    color: #142B40;
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+.results-grid {
+    width: min(100%, 1100px);
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(20px, 3vw, 30px);
+}
+
+.result-box {
+    border-top: 3px solid #188ce6;
+    padding: 25px 10px;
+    min-width: 0;
+}
+
+.result-box h3 {
+    font-size: 26px;
+    color: #142B40;
+    margin: 0 0 15px;
+}
+
+.result-box p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555555;
+}
+
+
+/* =========================
+   Skills
+========================= */
+
+.intake-skills {
+    background-color: #EAF0F6;
+    padding: 100px 30px;
+}
+
+.intake-skills > .section-label,
+.intake-skills > h2 {
+    width: min(100%, 1100px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intake-skills h2 {
+    font-size: 38px;
+    color: #142B40;
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+.skills-grid {
+    width: min(100%, 1100px);
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(20px, 3vw, 30px);
+}
+
+.skill-category {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid #d6dde4;
+    min-width: 0;
+}
+
+.skill-category h3 {
+    font-size: 21px;
+    color: #142B40;
+    margin: 0 0 15px;
+}
+
+.skill-category p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 700px) {
+
+    .intake-hero {
+        min-height: 450px;
+    }
+
+    .intake-hero-content {
+        width: 100%;
+        padding: 60px 25px;
+    }
+
+    .intake-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .intake-hero-content h2 {
+        font-size: 22px;
+    }
+
+    .intake-overview {
+        width: 100%;
+        padding: 65px 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .intake-overview h2 {
+        font-size: 30px;
+    }
+
+    .intake-overview img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .intake-section {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 60px 25px;
+        gap: 35px;
+    }
+
+    .intake-section.reverse {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .intake-text h2 {
+        font-size: 29px;
+    }
+
+    .intake-image-stack img {
+        height: 180px;
+    }
+
+    .collage img {
+        height: 200px;
+    }
+
+    .collage-three img {
+        max-height: 200px;
+    }
+
+    .intake-results,
+    .intake-skills {
+        padding: 65px 25px;
+    }
+
+    .intake-results h2,
+    .intake-skills h2 {
+        font-size: 30px;
+    }
+
+    .results-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

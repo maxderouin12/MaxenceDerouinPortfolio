@@ -1,0 +1,426 @@
+/* =========================
+   BRP
+========================= */
+
+.brp-hero {
+    height: clamp(450px, 40vw, 600px);
+    position: relative;
+    overflow: hidden;
+}
+
+.brp-hero-image {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 100%;
+    height: calc(100% + 50px);
+    object-fit: cover;
+
+    /* Fade the image */
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 75%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        black 85%,
+        transparent 100%
+    );
+}
+
+.brp-hero-text {
+    position: absolute;
+    bottom: clamp(40px, 4vw, 60px);
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.brp-hero-text h1 {
+    font-size: clamp(40px, 3.5vw, 52px);
+    color: #0003b6;
+}
+
+.brp-hero-text h2 {
+    font-size: clamp(20px, 1.6vw, 24px);
+    font-weight: normal;
+    margin-top: 5px;
+    color: #c7c7c7;
+}
+
+
+/* =========================
+   BRP Overview
+========================= */
+
+.brp {
+    width: min(100% - 50px, 1400px);
+    margin: 0 auto;
+}
+
+.brp-Overview {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(30px, 5vw, 75px);
+}
+
+.brp-Overview img {
+    width: clamp(150px, 15%, 250px);
+    height: 100px;
+    object-fit: contain;
+    margin: 12px 0 50px 0;
+    border: 1pt solid #dfdfdf;
+}
+
+.brp-Overview h1 {
+    font-size: clamp(28px, 3vw, 36pt);
+    color: #000000;
+    margin: 0;
+}
+
+hr.brp-Overview {
+    border: none;
+    border-top: 1pt solid #e6e6e6;
+    margin: 0 0 20px 0;
+}
+
+
+/* =========================
+   BRP Role
+========================= */
+
+.brp-Role {
+    margin: 0;
+}
+
+.brp-Role h1 {
+    font-size: clamp(22px, 2vw, 24pt);
+    color: #000000;
+    margin: 0;
+}
+
+.brp-Role h2 {
+    font-size: 12pt;
+    color: #002fff;
+    margin: 0 0 20px 0;
+}
+
+.brp-Role p {
+    font-size: 12pt;
+    color: #535353;
+    margin: 0;
+}
+
+
+/* =========================
+   BRP Main
+========================= */
+
+.brp-main {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(30px, 5vw, 75px);
+}
+
+.brp-main2 {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(30px, 5vw, 75px);
+}
+
+
+/* =========================
+   BRP Main Images
+========================= */
+
+.brp-main img {
+    width: clamp(350px, 45%, 600px);
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    margin: 100px 0 50px 0;
+    border-radius: 10px;
+    border: 3px solid #00f7ff;
+    box-sizing: border-box;
+}
+
+.brp-main2 img {
+    width: clamp(350px, 45%, 600px);
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    margin: 25px 0 50px 0;
+    border-radius: 10px;
+    border: 3px solid #00f7ff;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BRP Content
+========================= */
+
+.brp-Content {
+    margin: 0;
+    flex: 1;
+    min-width: 0;
+}
+
+.brp-Content h1 {
+    font-size: clamp(18px, 1.7vw, 20pt);
+    color: #000000;
+    margin: 0 0 20px 0;
+}
+
+.brp-Content p {
+    font-size: 12pt;
+    color: #000000;
+    text-align: justify;
+    margin: 0 0 20px 0;
+}
+
+
+/* =========================
+   Horizontal Rules
+========================= */
+
+hr.brp-main {
+    border: none;
+    border-top: 1pt solid #00eeff;
+    margin: 50px 0 10px 0;
+}
+
+hr.brp-Content {
+    border: none;
+    border-top: 1pt solid #dadada;
+    margin: 15px 0 20px 0;
+}
+
+
+/* =========================
+   BRP Skills
+========================= */
+
+.brp-skills {
+    margin: 0;
+    display: flex;
+}
+
+.brp-container {
+    width: 100%;
+    margin: 0 0 20px 0;
+    display: flex;
+    gap: clamp(15px, 2vw, 25px);
+}
+
+
+/* =========================
+   BRP Skill Boxes
+========================= */
+
+.brp-box1 {
+    background-color: white;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s ease;
+
+    flex: 550 1 0;
+    min-width: 0;
+}
+
+.brp-box2 {
+    background-color: white;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s ease;
+
+    flex: 275 1 0;
+    min-width: 0;
+}
+
+
+/* =========================
+   Skill Box Headings
+========================= */
+
+.brp-box1 h1,
+.brp-box2 h1 {
+    color: #0057A8;
+    font-size: 14pt;
+    margin: 10px;
+}
+
+
+/* =========================
+   Skill Box Paragraphs
+========================= */
+
+.brp-box1 p,
+.brp-box2 p {
+    font-size: 12pt;
+    margin: 10px 10px 20px 10px;
+}
+
+
+/* =========================
+   Lists
+========================= */
+
+.brp-container ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.brp-container li {
+    display: list-item;
+    margin-bottom: 6px;
+}
+
+
+/* =========================
+   Tablet / Smaller Desktop
+========================= */
+
+@media (max-width: 1000px) {
+
+    .brp {
+        width: calc(100% - 50px);
+    }
+
+    .brp-Overview {
+        gap: 30px;
+    }
+
+    .brp-main,
+    .brp-main2 {
+        gap: 30px;
+    }
+
+    .brp-main img,
+    .brp-main2 img {
+        width: 40%;
+    }
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 700px) {
+
+    .brp-hero {
+        height: 450px;
+    }
+
+    .brp-hero-text {
+        bottom: 40px;
+        padding: 0 20px;
+    }
+
+    .brp-hero-text h1 {
+        font-size: 40px;
+    }
+
+    .brp-hero-text h2 {
+        font-size: 20px;
+    }
+
+
+    /* =========================
+       Overview
+    ========================= */
+
+    .brp {
+        width: 100%;
+        margin: 0;
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+
+    .brp-Overview {
+        padding: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .brp-Overview img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .brp-Overview h1 {
+        font-size: 32px;
+    }
+
+
+    /* =========================
+       Role
+    ========================= */
+
+    .brp-Role {
+        padding: 0;
+    }
+
+    .brp-Role h1 {
+        font-size: 26px;
+    }
+
+
+    /* =========================
+       Main
+    ========================= */
+
+    .brp-main,
+    .brp-main2 {
+        padding: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .brp-main img,
+    .brp-main2 img {
+        width: 100%;
+        height: auto;
+        margin: 25px 0;
+    }
+
+    hr.brp-main {
+        margin: 50px 0 10px 0;
+    }
+
+
+    /* =========================
+       Skills
+    ========================= */
+
+    .brp-skills {
+        padding: 0;
+    }
+
+    .brp-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .brp-box1,
+    .brp-box2 {
+        width: 100%;
+        flex: none;
+    }
+}
